@@ -6,7 +6,7 @@ import { useI18n } from '@/i18n'
 const { lang, t } = useI18n()
 
 const footer = computed(() => t.value.footer)
-const logoSrc = '/logo.png'
+const logoSrc = `${import.meta.env.BASE_URL}logo.png`
 
 function linkTo (to) {
   if (!to) return `/${lang.value}`

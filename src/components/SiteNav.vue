@@ -32,7 +32,7 @@ watch(() => route.fullPath, () => {
 })
 
 const menuIcon = new URL('@/assets/icons/icon_menu.svg', import.meta.url).href
-const logoSrc = '/logo.png'
+const logoSrc = `${import.meta.env.BASE_URL}logo.png`
 </script>
 
 <template>
